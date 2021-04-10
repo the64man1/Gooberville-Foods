@@ -10,14 +10,14 @@ function getFood() {
     var foodTx = txbFoodEl.val();
     var sourceUrl = "spoonacular";
     var spoonacularKey = "27864d4f1b024cfb9af0eadf74ac4b8a";
-    var spoonApiUrl = "https://api.spoonacular.com/recipes/complexSearch?query=" + foodTx + "&apiKey=" + spoonacularKey;
+    var spoonApiUrl = "https://api.spoonacular.com/food/search?query=" + foodTx + "&apiKey=" + spoonacularKey;
 
     fetchFromWeb(sourceUrl, spoonApiUrl);
 
     var sourceUrl = "edamam";
-    var edamamApId = "b6b9c2d2";
-    var edamamKey = "08db0efd42b05ae763c333a2096dd78c";
-    var edamApiUrl = "https://api.edamam.com/api/food-database/v2/parser?ingr=" + foodTx + "&app_id=" + edamamApId + "&app_key=" + edamamKey ;
+    var edamamApId = "5a358cfa";
+    var edamamKey = "0dd5eb6b500039468f7950a5fb8851fb";
+    var edamApiUrl = "https://api.edamam.com/search?q=" + foodTx + "&app_id=" + edamamApId + "&app_key=" + edamamKey ;
 
     fetchFromWeb(sourceUrl, edamApiUrl);
 
