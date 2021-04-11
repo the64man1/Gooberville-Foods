@@ -1,5 +1,5 @@
 // Variables to get element IDs/class(es)
-var greetingMsgEl = $("#welcome-greeting");
+var greetingMsgEl = $(".time-of-day");
 var txbFoodEl = $("#txb-food");
 var btnEnter = $("#btn-Enter");
 var divApiData = $("#api-data");
@@ -24,7 +24,10 @@ function onLoad() {
     greetingMsgEl.append("afternoon!");
   else {
     greetingMsgEl.append("evening!");
-  } 
+  }
+
+  console.log(dTim);
+  console.log(greetingMsgEl);
 
   //#region Message to display in developer tools
       console.log("Finished onLoad");
