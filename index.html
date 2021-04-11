@@ -4,20 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- added link to css maerialize and link to css stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href = "./style.css">
     <title>Project-01-Food</title>
 </head>
 <body>
-    <input id="txb-food" type="text">
-    <button id="btn-Enter" type="button">Enter</button>
-    <div id="div-data">
-        <div id="spoonacular">
-            <h1>spoonacular</h1>
-        </div>
-        <div id="edamam">
-            <h1>Edamam</h1>
-        </div>
+    <h1 class= "time-of-day" class="center">Hello World! </h1>
+    <h4>type a main ingredient you have in your pantry and click submit. You will find a list of recipes that you can try!</h4>
+    <!-- added search buttons and fields -->
+   <div class= "container" >
+        <div class="row">
+            <form class="col s12">
+                <div class="input-field col s6">
+                <a class="btn waves-effect waves-teal">Submit</a>
+                  <input id="input_text" type="text" data-length="10">
+                    <div id="div-data">
+                    </div>
+                </div>
+            </form>         
+        </div>  
     </div>
+     
+
+        <div class="container">
+            <div class ="row">
+            <div class = "col s6 left">
+                <div id="spoonacular" class = "hide">
+                <h1> Spoonacular </h1>
+                    <ul class = "collection">
+                        <li class = "collection-item"> <li><a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">star</i></a></li>
+                        <a href= "#!" class = "collection-item">link 2</a>
+                        <a href= "#" class = "collection-item">link 3</a>
+                        <a href= "#" class = "collection-item">link 4</a>
+                        <a href= "#" class = "collection-item">link 5</a>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+       
+        <div class="container">
+            <div class ="row">
+            <div class = "col s6 right">
+                <div id="edamam" class = "hide">
+                <h1>Edamam</h1>    
+                    <ul class = "collection">
+                        <li class = "collection-item"> <li><a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">star</i></a></li>
+                        <a href= "#!" class = "collection-item">link 2</a>
+                        <a href= "#" class = "collection-item">link 3</a>
+                        <a href= "#" class = "collection-item">link 4</a>
+                        <a href= "#" class = "collection-item">link 5</a>
+                     </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
 </html>
