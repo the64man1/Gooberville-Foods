@@ -10,42 +10,36 @@
     <title>Project-01-Food</title>
 </head>
 <body>
-    <h1 class="time-of-day" class="center"></h1>
-    <h4>type a main ingredient you have in your pantry and click submit. You will find a list of recipes that you can try!</h4>
-    <!-- added search buttons and fields -->
-   <div class="container" >
+    <div class="container">
+    <header>
+        <h1 class="time-of-day" class="center"></h1>
+    </header>
+
+    
+        <div class="row">
+            <h4>type a main ingredient you have in your pantry and click submit. You will find a list of recipes that you can try!</h4>
+        </div>
         <div class="row">
             <form class="col s12">
                 <div class="input-field col s6">
-                <a class="btn waves-effect waves-teal">Submit</a>
+                <a id="btn-submit" class="btn waves-effect waves-teal">Submit</a>
                   <input id="input_text" type="text" data-length="10">
-                    <div id="div-data">
-                    </div>
+                    <div id="div-data"></div>
                 </div>
-            </form>         
-        </div>  
-    </div>
-        <div class="container">
-            <div class ="row">
-            <div class="col s6 left">
-                <div id="spoonacular" class="hide">
-                <h1> Spoonacular </h1>
-                    <ul class="collection">
-                        <li class="collection-item"> <li><a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">star</i></a></li>
-                        <a href="#!" class="collection-item">link 2</a>
-                        <a href="#" class="collection-item">link 3</a>
-                        <a href="#" class="collection-item">link 4</a>
-                        <a href="#" class="collection-item">link 5</a>
-                    </ul>
-                </div>
-            </div>
-            </div>
+            </form>
         </div>
-       
-        <div class="container">
-            <div class ="row">
-            <div class="col s6 right">
-                <div id="edamam" class="hide">
+        <div class="row">
+            <div id="spoonacular" class="hide col s6 left">
+                <h1> Spoonacular </h1>
+                <ul class="collection">
+                    <li class="collection-item"> <li><a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">star</i></a></li>
+                    <a href="#!" class="collection-item">link 2</a>
+                    <a href="#" class="collection-item">link 3</a>
+                    <a href="#" class="collection-item">link 4</a>
+                    <a href="#" class="collection-item">link 5</a>
+                    </ul>
+            </div>
+            <div id="edamam" class="hide col s6 right">
                 <h1>Edamam</h1>    
                     <ul class="collection">
                         <li class="collection-item"> <li><a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">star</i></a></li>
@@ -55,9 +49,8 @@
                         <a href="#" class="collection-item">link 5</a>
                      </ul>
                 </div>
-            </div>
-            </div>
         </div>
+    </div>
 
         
 </body>

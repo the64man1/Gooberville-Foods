@@ -1,7 +1,7 @@
 // Variables to get element IDs/class(es)
 var greetingMsgEl = $(".time-of-day");
-var txbFoodEl = $("#txb-food");
-var btnEnter = $("#btn-Enter");
+var txbFoodEl = $("#input_text");
+var btnEnter = $("#btn-submit");
 var divApiData = $("#api-data");
 var divSpoonnac = $("#spoonacular-data");
 var divEdamam = $("#edamam-data");
@@ -25,9 +25,6 @@ function onLoad() {
   else {
     greetingMsgEl.append("evening!");
   }
-
-  console.log(dTim);
-  console.log(greetingMsgEl);
 
   //#region Message to display in developer tools
       console.log("Finished onLoad");
@@ -81,16 +78,24 @@ function fetchFromWeb(webName, website) {
         
         var spoonData = data.searchResults;
         var edamData = data.hints;
-        var results;
+        var food;
 
         if (webName == "spoonacular") {
-          results = spoonData;
+          food = spoonData;
+          //console.log(food);
         }
 
-        for (var i = 0; i < results.length; i++) {
+        for (var i = 0; i < food.length; i++) {
 
-          if (results[i].name == "Recipes") {
-                       
+          if ((webName == "spoonacular") && (food[i].name == "Recipes")) {
+            //console.log(food[i]);
+
+            for (var j = 0; j < food[i].results.length; j++) {
+              console.log(food[i].results[j]);
+
+              //var 
+
+            }
           }
             
         }
