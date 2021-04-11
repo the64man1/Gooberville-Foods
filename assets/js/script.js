@@ -1,27 +1,65 @@
+// Variables to get element IDs/class(es)
+var greetingMsgEl = $("#welcome-greeting");
 var txbFoodEl = $("#txb-food");
 var btnEnter = $("#btn-Enter");
 var divApiData = $("#api-data");
+var divSpoonnac = $("#spoonacular-data");
+var divEdamam = $("#edamam-data");
 
-var divSpoonnac = $("#spoonacular");
-var divOpenFood = $("#edamam");
+function onLoad() {
+  
+  //#region Message to display in developer tools
+      console.log("Started onLoad");
+  //#endregion
+
+  var dTimMs = new Date();
+  var dTim = dTimMs.getHours();
+
+  greetingMsgEl.append("Good ");
+
+  if(dTim < 12) {
+    greetingMsgEl.append("morning!");
+  }
+  else if (dTim < 18)
+    greetingMsgEl.append("afternoon!");
+  else {
+    greetingMsgEl.append("evening!");
+  } 
+
+  //#region Message to display in developer tools
+      console.log("Finished onLoad");
+  //#endregion
+  
+}
 
 function getFood() {
 
-    var foodTx = txbFoodEl.val();
-    var sourceUrl = "spoonacular";
-    var spoonacularKey = "27864d4f1b024cfb9af0eadf74ac4b8a";
-    var spoonApiUrl = "https://api.spoonacular.com/food/search?query=" + foodTx + "&apiKey=" + spoonacularKey;
+  // Gets the value of the textbox
+  var foodTx = txbFoodEl.val();
 
-    fetchFromWeb(sourceUrl, spoonApiUrl);
+  // Clear out divs before entering new data
+  divSpoonnac.empty();
+  divEdamam.empty();
 
-    var sourceUrl = "edamam";
-    var edamamApId = "5a358cfa";
-    var edamamKey = "0dd5eb6b500039468f7950a5fb8851fb";
-    var edamApiUrl = "https://api.edamam.com/search?q=" + foodTx + "&app_id=" + edamamApId + "&app_key=" + edamamKey ;
+  var sourceUrl = "spoonacular";
+  var spoonAppKeyRef = "&apiKey=";
+  var spoonacularKey = "27864d4f1b024cfb9af0eadf74ac4b8a";
+  var spoonacularAuth = spoonAppKeyRef + spoonacularKey;
+  var spoonacularCall = "https://api.spoonacular.com/food/search?query=" + foodTx + spoonacularAuth;
 
-    fetchFromWeb(sourceUrl, edamApiUrl);
+  fetchFromWeb(sourceUrl, spoonacularCall);
 
-    foodTx = "";
+  var sourceUrl = "edamam";
+  var edamamAppIdRef = "&app_id=";
+  var edamamAppIdVal = "5a358cfa";
+  var edamamAppKeyRef = "&app_key=";
+  var edamamKey = "0dd5eb6b500039468f7950a5fb8851fb";
+  var edamamAuth = edamamAppIdRef + edamamAppIdVal + edamamAppKeyRef + edamamKey;
+  var edamamCall = "https://api.edamam.com/search?q=" + foodTx + edamamAuth;
+
+  //fetchFromWeb(sourceUrl, edamamCall);
+
+  foodTx = "";
     
 }
 
@@ -38,10 +76,24 @@ function fetchFromWeb(webName, website) {
       })
       .then(function (data) {
         
-        var spoonData = data.results;
+        var spoonData = data.searchResults;
         var edamData = data.hints;
         var results;
 
+        if (webName == "spoonacular") {
+          results = spoonData;
+        }
+
+        for (var i = 0; i < results.length; i++) {
+
+          if (results[i].name == "Recipes") {
+                       
+          }
+            
+        }
+
+        //#region Original code
+        /*
         if(webName == "spoonacular") {
             results = spoonData;
             console.log("spoonData");
@@ -63,10 +115,10 @@ function fetchFromWeb(webName, website) {
             }
             else {
                 pEl.append(results[i].food.label);
-                divOpenFood.append(pEl);
-            }
-            
-        }        
+                divEdamam.append(pEl);
+            }            
+        }*/
+        //#endregion
         
         
       })
@@ -76,4 +128,5 @@ function fetchFromWeb(webName, website) {
 
 }
 
+window.onload = onLoad;
 btnEnter.click("click", getFood);
