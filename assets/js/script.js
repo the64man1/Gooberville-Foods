@@ -8,7 +8,7 @@ var divEdamam = $("#edamam-data");
 
 function onLoad() {
   
-  //#region Message to display in developer tools
+  //#region Message to display in developer tools info
       console.log("Started onLoad");
   //#endregion
 
