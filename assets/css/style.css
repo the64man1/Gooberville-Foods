@@ -1,0 +1,207 @@
+#btn-submit {
+    width: 75px;
+}
+
+#title {
+    position: relative;
+    left: 20px;
+    font-size: 2rem;
+    color: black;
+}
+
+#spoonacular, #edamam {
+    min-width: 340px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.local-coll {
+    padding: 0px !important;
+}
+
+.local-coll-item {
+    padding: 1px 2px !important;
+}
+
+.local-coll-item:nth-child(odd) {
+    background-color: #80c1ff;
+}
+
+.local-coll-item:nth-child(even) {
+    background-color: #00b386;
+}
+
+.local-row {
+    display: flex;
+    margin: 10px 0px !important;
+    min-height: 116px !important;
+    width: 100% !important;
+}
+
+.local-row-buttons {
+    display: flex;
+    margin: 0.05rem 0.5rem 0.5rem 0.5rem !important;
+    justify-content: space-evenly;
+    font-size: 10px;
+}
+
+.local-col-buttons {
+    margin: 0.1rem;
+}
+
+.local-buttons {
+    width: 40%;
+    padding: 0.4rem 0.08rem 0.4rem 0.08rem;
+}
+
+.local-row > * {    
+    min-height: 116px !important;
+}
+
+.local-food-info {
+    margin: 0px !important;
+    max-height: 3.15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.local-col {
+    padding: 0px !important;
+}
+
+
+.local-col-first {
+    margin-left: 0px !important;
+    margin-right: 5px !important;
+    padding-left: 10px !important;
+}
+
+.local-col-first > header {
+    margin-bottom: 10px !important;
+}
+
+.local-col-first > header > * {
+    margin: 0px !important;
+}
+
+.local-col-second {
+    margin-left: 0px !important;
+
+    /* Local variable in the class */
+    --borderSize: 11px;
+
+    border-top: var(--borderSize) solid #806c00;
+    border-right: var(--borderSize) solid #ccad00;
+    border-bottom: var(--borderSize) solid #ffe033;
+    border-left: var(--borderSize) solid #ffec80;
+    max-width: 150px;
+    max-height: 116px;
+}
+
+.local-col-third {
+   margin: auto !important;
+}
+
+.local-btn-star {
+    border-radius: 15px;
+}
+
+.local-btn-star:focus {
+    outline: none;
+}
+
+.local-btn-star-save {
+    font-size: 60px;
+    color: gold;
+}
+
+.local-btn-star-save:active, i:active {
+    transition: all 0.5s ease-in-out;
+    font-size: 50px;
+    color: black;
+}
+
+.local-btn-star-unsave {
+    font-size: 50px;
+    color: black;
+}
+
+.local-btn-star-unsave:active, i:active {
+    transition: all 0.5s ease-in-out;
+    font-size: 60px;
+    color: gold;
+}
+
+.local-btn-star-unsave:hover {
+    animation: growAndShrink 1s infinite;
+}
+
+#text {
+    color: black;
+}
+
+.food-content {
+    max-width: 412px;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+@keyframes growAndShrink {
+    0%   {font-size: 50px;}
+  50%  {font-size: 60px; color:gold;}
+  100% {font-size: 50px; color:black}
+    /* from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);} */
+}
+
+@media screen and (max-width:540px) {
+    #title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:465px) {
+    #title {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #title {
+        font-size: 1rem;
+    }
+
+    #saved-img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #saved-img {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    #title {
+        font-size: 0.75rem;
+    }
+
+    #saved-img {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    #saved-img {
+        width: 240px;
+    }
+}
