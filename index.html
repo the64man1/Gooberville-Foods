@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- added link to css maerialize and link to css stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="./assets/css/style.css">
-    <title>Project-01-Food</title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Gooberville Foods</title>
+  </head>
+
+  <body class="blue">
     <div class="container">
-    <header>
+      <nav>
+        <div class="nav-wrapper red lighten-2">
+          <span id="title">Recipe Search and Save</span>
+          <ul class="right">
+            <li><a href="./savedrecipes.html" id="mysaved-recipies" class="waves-effect waves-light btn">My Saved Recipes</a></li>
+          </ul>
+        </div>
+      </nav>
+      <header class="center card-panel teal lighten-2">
         <h1 class="time-of-day" class="center"></h1>
-    </header>
+      </header>
+      <div class="row center card-panel red lighten-2">
+        <h4>Search for recipes to make your favorite dish, and save your favorite recipes for later!</h4>
+      </div>
+      <div class="row center">
+        <form class="col s12 card-panel valign-wrapper center-align">
+          <input class="col s6" id="input-text" type="text" data-length="10">
+          <a id="btn-submit" class="col s2 btn waves-effect waves-teal">Submit</a>
+          <div id="div-data"></div>
+        </form>
+      </div>
+      <div>
+      </div>
+      <div id="food-search" class="hide row">
+        <div id="spoonacular" class="col l6 m12 left">
+          <h1>Spoonacular</h1>
+          <ul id="spoon-results" class="local-coll collection">
+          </ul>
+        </div>
+        <div id="edamam" class="col l6 m12 right">
+          <h1>Edamam</h1>
+          <ul id="edam-results" class="local-coll collection">
+          </ul>
+        </div>
+      </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 
-    
-        <div class="row">
-            <h4>type a main ingredient you have in your pantry and click submit. You will find a list of recipes that you can try!</h4>
-        </div>
-        <div class="row">
-            <form class="col s12">
-                <div class="input-field col s6">
-                <a id="btn-submit" class="btn waves-effect waves-teal">Submit</a>
-                  <input id="input_text" type="text" data-length="10">
-                    <div id="div-data"></div>
-                </div>
-            </form>
-        </div>
-        <div class="row">
-            <div id="spoonacular" class="hide col s6 left">
-                <h1> Spoonacular </h1>
-                <ul class="collection">
-                    <li class="collection-item"> <li><a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">star</i></a></li>
-                    <a href="#!" class="collection-item">link 2</a>
-                    <a href="#" class="collection-item">link 3</a>
-                    <a href="#" class="collection-item">link 4</a>
-                    <a href="#" class="collection-item">link 5</a>
-                    </ul>
-            </div>
-            <div id="edamam" class="hide col s6 right">
-                <h1>Edamam</h1>    
-                    <ul class="collection">
-                        <li class="collection-item"> <li><a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">star</i></a></li>
-                        <a href="#!" class="collection-item">link 2</a>
-                        <a href="#" class="collection-item">link 3</a>
-                        <a href="#" class="collection-item">link 4</a>
-                        <a href="#" class="collection-item">link 5</a>
-                     </ul>
-                </div>
-        </div>
-    </div>
-
-        
-</body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/script.js"></script>
 </html>
