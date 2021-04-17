@@ -1,4 +1,4 @@
-# Gooberville
+# Gooberville-Foods
 Project 1: Gooberville Foods Recipe Search and Save<br>
 A website where you can look up recipes from different databases, and save the recipes you like with comments<br>
 
