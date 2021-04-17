@@ -1,6 +1,18 @@
 # Gooberville
-Project 1: Gooberville Foods Recipe Search and Save
-A website where you can look up recipes from different databases, and save the recipes you like with comments
+Project 1: Gooberville Foods Recipe Search and Save<br>
+A website where you can look up recipes from different databases, and save the recipes you like with comments<br>
+
+Technologies used: HTML, CSS, Materialize, Javascript, Jquery, Spoonacular API, Edamam API<br>
+
+Link to Github repository files: https://github.com/the64man1/Gooberville/<br>
+Link to Github pages website: https://the64man1.github.io/Gooberville/<br>
+
+Main page:<br>
+![Project-01-Food (3)](https://user-images.githubusercontent.com/74144055/115123180-88398280-9f81-11eb-8a8c-a470dde8ef2a.png)<br>
+
+Saved recipes page:<br>
+![Gooberville Save](https://user-images.githubusercontent.com/74144055/115123206-9e474300-9f81-11eb-919d-1cfb7480c67b.png)
+
 
 <table class="tg">
 <thead>
