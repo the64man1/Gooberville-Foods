@@ -3,9 +3,7 @@
   var greetingMsgEl = $(".time-of-day");
   var inputFoodEl = $("#input-text");
   var foodSearchEl = $("#food-search");
-  var spoonacularEl = $("#spoonacular");
   var spoonResultsEl = $("#spoon-results");
-  var edamamEl = $("#edamam");
   var edamResultsEl = $("#edam-results");
 
   // Global variables assigned/unassigned
@@ -227,7 +225,6 @@ function pullResults(webName, foodName, foodInfo, foodImg, foodLink) {
   var modalTextCheck = loadSaveComments(foodLink); // Returns the saved comments
   var modalFooterEl = $("<div>");
   var modalSaveEl =$("<a>");
-  var modalCancelEl =$("<a>");
 
   // Adding classes to the li element
   liEl.addClass("local-coll-item collection-item");
