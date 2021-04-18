@@ -1,3 +1,4 @@
+
 //#region Variables
   // Global variables to get element IDs/class(es)
   var greetingMsgEl = $(".time-of-day");
