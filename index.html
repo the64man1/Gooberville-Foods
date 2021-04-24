@@ -5,35 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- added link to css maerialize and link to css stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- ADDED GOOGLE ICONS STYLESHEET -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman&family=Handlee&family=Homemade+Apple&family=Meddon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Gooberville Foods</title>
   </head>
 
-  <body class="blue">
-    <div class="container">
-      <nav>
-        <div class="nav-wrapper red lighten-2">
-          <span id="title">Gooberville FOODS</span>
-          <ul class="right">
-            <li><a href="./savedrecipes.html" id="mysaved-recipies" class="waves-effect waves-light btn">My Saved Recipes</a></li>
-          </ul>
-        </div>
+  <body>
+    <!-- Navigation bar for full screen -->
+    <div class="containter">
+      <nav class="nav-wrapper grey darken-1 ">
+            <a href="#" class="brand-logo">Gooberville FOODS</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">flatware</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="./savedrecipes.html">Saved Recipes</a></li>
+            </ul>
+  
+    <!-- Navigation bar for mobile devices -->
+      <ul class="sidenav" id="mobile-links">
+        <li><a href="./savedrecipes.html">Saved Recipes</a></li>
+      </ul>
       </nav>
-      <header class="center card-panel teal lighten-2">
-        <h1 class="time-of-day" class="center"></h1>
-      </header>
-      <div class="row center card-panel red lighten-2">
+    </div>
+<!-- Greeting Containter -->
+
+    <br>
+    <div class="container">
+      <header class="center-align" > 
+        <h1 class="time-of-day" ></h1> 
+      </header> 
+      <br>
+      <div class="container"class="center">
         <h4>Search for recipes to make your favorite dish, and save your favorite recipes for later!</h4>
-      </div>
-      <div class="row center">
-        <form class="col s12 card-panel valign-wrapper center-align">
-          <input class="col s6" id="input-text" type="text" data-length="10">
-          <a id="btn-submit" class="col s2 btn waves-effect waves-teal">Submit</a>
-          <div id="div-data"></div>
-        </form>
-      </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="search">
+            <input type="text" id="input-text"class="search-bar " data-length="10" placeholder="Dishes">
+            <a href = "#" class="btn-floating grey darken-1" id="btn-submit">
+                <i class="material-icons">flatware</i></a>
+            <div id="div-data"></div>
+        </div>
+    </div>
+
+
+      
       <div>
       </div>
       <div id="food-search" class="hide row">
@@ -52,5 +76,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <!-- JQuery script for the mobile side navigation bar -->
+  <script>
+      $(document).ready(function(){
+          $('.sidenav').sidenav();
+      })
+  </script>
 
 </html>

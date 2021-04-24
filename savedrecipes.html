@@ -5,37 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gooberville Saved Recipes</title>
+       <!-- added link to css maerialize and link to css stylesheet -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <!-- ADDED GOOGLE ICONS STYLESHEET -->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Charmonman&family=Handlee&family=Homemade+Apple&family=Meddon&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+       <link rel="stylesheet" href="./assets/css/style.css">
+       
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <title>Saved Recipes -Gooberville Foods </title>
   </head>
 
   <body>
+    <!-- Navigation bar for full screen -->
+    <div class="containter">
+      <nav class="nav-wrapper grey darken-1 ">
+            <a href="#" class="brand-logo">Gooberville FOODS</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">flatware</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="./index.html">Home</a></li>
+            </ul>
+  
+    <!-- Navigation bar for mobile devices -->
+      <ul class="sidenav" id="mobile-links">
+        <li><a href="./index.html">Home</a></li>
+      </ul>
+      </nav>
+    </div>
+    <br>
     <div class="container">
-
-      <body class="blue">
-        <div class="container">
-          <nav>
-            <div class="nav-wrapper red lighten-2">
-              <span id="title">My Saved Recipes</span>
-              <ul class="right">
-                <li><a href="./index.html" id="mysaved-recipies" class="waves-effect waves-light btn">Return to Search</a></li>
-              </ul>
-            </div>
-          </nav>
-          <header>
-            <h1 class="time-of-day" class="center"></h1>
-          </header>
-          <div class="row card-panel teal lighten-2">
-            <h4>Check out your saved recipes and comments, and delete recipes you no longer need!</h4>
+      <header class="center-align"  > 
+        <h1 class="fancyFont">My Saved Recipes</h1> 
+      </header> 
+      <br>
+      <div class="container"></div>
+            <h4 class= "center-align">Check out your saved recipes and comments.</h4>
+            <h4 class= "center-align">You can click on the link to the website to see the full recipe and or delete recipes you no longer need!</h4>
           </div>
-          <div id="saved-recipies" class="row">
+          <div class = "container">
+          <div id="saved-recipies" class="row" class= "font">
           </div>
           <aside>
-            <div class="form-inline form-group">
+            <div class="cemter-align">
             </div>
             <ul id="previous"> </ul>
           </aside>

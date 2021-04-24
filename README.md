@@ -8,10 +8,13 @@ Link to Github repository files: https://github.com/the64man1/Gooberville-Foods/
 Link to Github pages website: https://the64man1.github.io/Gooberville-Foods/<br>
 
 Main page:<br>
-![Project-01-Food (3)](https://user-images.githubusercontent.com/74144055/115123180-88398280-9f81-11eb-8a8c-a470dde8ef2a.png)<br>
+<img src="assets/images/Home Page Screen Shot.png" alt= "Saved Recipe Picture"><br>
+
+Search Results: <br>
+<img src="assets/images/Search screenshot.png" alt= "Search Results">
 
 Saved recipes page:<br>
-![Gooberville Save](https://user-images.githubusercontent.com/74144055/115123206-9e474300-9f81-11eb-919d-1cfb7480c67b.png)
+<img src="assets/images/Saved Recipes ScreenShot.png" alt= "Saved Recipe Picture">
 
 
 <table class="tg">
