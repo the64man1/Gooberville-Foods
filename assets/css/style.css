@@ -1,3 +1,66 @@
+:root {
+    --fancyFont: 'Meddon', cursive;
+    --font: 'Handlee', cursive;
+}
+.font{
+    font-family: var(--font); 
+}
+
+#food-search {
+    min-width: 682px;
+}
+
+#spoonacular, #edamam {
+    font-family: var(--font);
+    min-width: 340px;
+}
+.nav-wrapper{
+    font-family: var(--font); 
+}
+.time-of-day{
+    font-family: var(--fancyFont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h4{
+    font-family: var(--font); 
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.fancyFont{
+    font-family: var(--fancyFont);
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 24px;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+/**/
+
 #btn-submit {
     width: 75px;
 }
@@ -28,11 +91,21 @@
 }
 
 .local-coll-item:nth-child(odd) {
-    background-color: #80c1ff;
+background: rgba( 251, 210, 132, 0.40 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 )
 }
 
 .local-coll-item:nth-child(even) {
-    background-color: #00b386;
+background: rgba( 77, 183, 255, 0.40 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .local-row {
@@ -54,7 +127,7 @@
 }
 
 .local-buttons {
-    width: 40%;
+    width: 60%;
     padding: 0.4rem 0.08rem 0.4rem 0.08rem;
 }
 
@@ -91,13 +164,13 @@
 .local-col-second {
     margin-left: 0px !important;
 
-    /* Local variable in the class */
+    /* Local variable in the class 
     --borderSize: 11px;
 
     border-top: var(--borderSize) solid #806c00;
     border-right: var(--borderSize) solid #ccad00;
     border-bottom: var(--borderSize) solid #ffe033;
-    border-left: var(--borderSize) solid #ffec80;
+    border-left: var(--borderSize) solid #ffec80;*/
     max-width: 150px;
     max-height: 116px;
 }
@@ -107,7 +180,8 @@
 }
 
 .local-btn-star {
-    border-radius: 15px;
+    border-radius: 80px;
+   
 }
 
 .local-btn-star:focus {
@@ -122,12 +196,12 @@
 .local-btn-star-save:active, i:active {
     transition: all 0.5s ease-in-out;
     font-size: 50px;
-    color: black;
+    color: silver;
 }
 
 .local-btn-star-unsave {
     font-size: 50px;
-    color: black;
+    color: silver;
 }
 
 .local-btn-star-unsave:active, i:active {
@@ -137,7 +211,7 @@
 }
 
 .local-btn-star-unsave:hover {
-    animation: growAndShrink 1s infinite;
+    animation: growAndShrink 3s infinite;
 }
 
 #text {

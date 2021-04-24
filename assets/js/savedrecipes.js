@@ -31,9 +31,9 @@ var htmlCode =""
     <br>
     <li>${comment}</li>
     <hr>
-    <li><a class="btn" href="${dishesList[i].link}" target="_blank">Full recipe</a></li>
+    <li><a class="btn-floating brown" class="align-left" href="${dishesList[i].link}" target="_blank"><i class= 'material-icons' >link</i>"</a></li>
     <br>
-    <li><button type="submit" id="${dishesList[i].link}" class="btn waves-effect waves-teal">Delete Recipe</button></li>
+    <li><button class="align-right" type="submit" id="${dishesList[i].link}" "btn waves-effect waves-teal"><i class='material-icons'>delete_forever</i></button></li>
     </div>`
   }
 

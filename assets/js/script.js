@@ -241,11 +241,11 @@ function pullResults(webName, foodName, foodInfo, foodImg, foodLink) {
   col1FoodDivRowBtnEl.addClass("local-row-buttons row");
   col1FoodDivColAel.addClass("local-col local-col-buttons col s6");
   col1FoodDivColBel.addClass("local-col local-col-buttons col s6");
-  col1FoodBtnLinkEl.addClass("local-buttons");
+  col1FoodBtnLinkEl.addClass("btn-floating brown");
   col1FoodBtnLinkEl.attr("onclick", "window.open('" + foodLink + "', '_blank')");
   col1FoodBtnCommEl.attr("data-target", "modal-main-container-" + modalCounter);
   col1FoodBtnCommEl.attr("modal-text-target", "modal-text-" + modalCounter);
-  col1FoodBtnCommEl.addClass("local-btn-comment btn modal-trigger");
+  col1FoodBtnCommEl.addClass("waves-effect waves-light btn modal-trigger blue-grey");
   col1FoodBtnCommEl.attr("link", foodLink);
 
   // Modal content element - adding attributes and classes
@@ -259,11 +259,12 @@ function pullResults(webName, foodName, foodInfo, foodImg, foodLink) {
   modalFooterEl.addClass("modal-footer");
   modalSaveEl.attr("ref", "modal-text-" + modalCounter);
   modalSaveEl.attr("link", foodLink);
-  modalSaveEl.addClass("modal-close waves-effect waves-green btn-flat");  
+  modalSaveEl.addClass("modal-close waves-effect btn-flat");  
 
   // Column 2 - image - adding classes and attributes to the element
   col2DivEl.addClass("local-col local-col-second center col s4");
-  col2FoodImg.attr({"src": foodImg, "style": "width:100%;height:100%;"});
+  col2FoodImg.attr({"src": foodImg, "style": "width:100%;height:100%;border-radius:50%"});
+
   
   // Column 3 - save icon - adding classes and attributes to the element
   col3DivEl.addClass("local-col local-col-third center col s2");
@@ -299,11 +300,11 @@ function pullResults(webName, foodName, foodInfo, foodImg, foodLink) {
   
   col1DivEl.append(col1FoodDivRowBtnEl);
   col1FoodDivRowBtnEl.append(col1FoodBtnLinkEl)
-  col1FoodBtnLinkEl.append("Link");
+  col1FoodBtnLinkEl.append("<i class= 'material-icons' >link</i>");
   
   col1DivEl.append(col1FoodDivRowBtnEl);
   col1FoodDivRowBtnEl.append(col1FoodBtnCommEl)
-  col1FoodBtnCommEl.append("Comment");
+  col1FoodBtnCommEl.append("<i class ='material-icons'>comment</i>")
   
   col1DivEl.append(col1FoodDivRowBtnEl);
   col1FoodDivRowBtnEl.append(modalMainDivEl);
